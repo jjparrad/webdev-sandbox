@@ -5,24 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="sandbox.js" defer></script>
 </head>
 <body>
     <section>
-        <h1>Título</h1>
-        <h2>Subtítulo 1</h2>
-        <p>Pequeña descripción</p>
-    </section>
-    <section>
-        <div>
-            <h2>Artículo 1</h2>
-            <p>Hola amigos, este es el artículo número uno</p>
+        <h1>Problema de <span id="monty-hall">Monty Hall</span></h1>
+        <div class="intro">
+            <p>Este es un problema basado en un programa de concurso antiguo de los Estados Unidos. 
+                En éste, los participantes tenían que elegir entre 3 diferentes puertas, tras las que, en una de ellas,
+                se encontraba un auto. Tras elegir una puerta, el presentador eliminaba una de las puertas que no 
+                llebavan a nada y le daba la posibilidad al participante de cambiar la puerta o continuar
+                con su elección inicial.</p>
         </div>
-        <div>
-            <h2>Artículo 2</h2>
-            <p>Hola amigos, este es el artículo número dos</p>
+        <h2>Número de simulaciones: <span class="simulation-number">0</span></h2>
+        <div class="result">
+            <div>Cambio</div>
+            <div> <span class="change-result">0</span> <span class="change-percentage">0%</span></div>
         </div>
-        <button>Rojo</button>
+        <div class="result">
+            <div>No cambio </div>
+            <div><span class="no-change-result">0</span> <span class="no-change-percentage">0%</span></div>
+        </div>
+        <button class="button-simulation">Inicio</button>
+        <button class="button-reset">Reiniciar</button>
+        <br>
+        <br>
+        <button class="button-red">Color</button>
     </section>
-    <script src="sandbox.js"></script>
 </body>
 </html>
