@@ -1,0 +1,109 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: steelblue;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(17, 40, 71);
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+}
+
+li{
+    padding: 15px;
+}
+
+.item-seleccionado{
+    background-color: rgb(119, 150, 192);
+}
+
+li:hover.item-seleccionado{
+    background-color: rgb(90, 132, 190);
+}
+
+li:hover{
+    background-color: lightsteelblue;
+}
+
+section{
+    margin-top: 30px;
+    position: relative;
+    float: left;
+    background-color: lightsteelblue;
+    height: 600px;
+}
+
+.disponibles{
+    margin-left: 50px;
+    width: 30%;
+}
+
+.agregados{
+    width: 60%;
+}
+
+.items{
+    background-color: rgb(157, 181, 212);
+    position: absolute;
+    top: 10px;
+    bottom: 40px;
+    right: 10px;
+    left: 10px;
+}
+
+.list-container{
+    overflow: auto;
+    max-height: 84%;
+}
+
+.compra{
+    position: absolute;
+    background-color:  rgb(157, 181, 212);
+    top: 100px;
+    bottom: 40px;
+    left: 0px;
+    right: 10px;
+}
+
+.disponibles-texto{
+    padding: 10px;
+    text-align: center;
+    color: rgb(211, 225, 243);
+}
+
+.total{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+button{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.precio{
+    float: right;
+}
+
+button{
+    height: 25px;
+    width: 95%;
+    border: 0;
+    outline: 0;
+    border-radius: 0;
+}
+
+button:hover{
+    background-color: rgb(224, 158, 15);
+}
+
+button:active{
+    background-color: goldenrod;
+}
