@@ -1,0 +1,23 @@
+<section>
+    <h2>Registrar llegada</h2>
+    <hr>
+    <form (ngSubmit)="registrar(f)" #f="ngForm">
+        <div class="form-group">
+            <label for="id">Cédula</label>
+            <input type="text" class="form-control" id="id" name="id" ngModel>
+        </div>
+        <div class="form-group">
+            <h3>Síntomas prioritarios:</h3>
+            <div class="grupo-checkbox" *ngFor="let sintoma of sintomasPrioritarios">
+                <label for="sintoma {{ sintoma }}">
+                    <input type="checkbox" id="sintoma {{ sintoma }}" name="{{sintoma}}" ngModel>
+                    {{ sintoma }}
+                </label>
+            </div>
+        </div>
+    </form>
+    <button (click)="registrar(f)" type="submit">Registrar</button>
+    <button routerLink="/inicio">Cancelar</button>
+</section>
+
+<a routerLink="/pacientes">pacientes</a>

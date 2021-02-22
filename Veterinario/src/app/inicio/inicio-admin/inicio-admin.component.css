@@ -1,0 +1,21 @@
+a{
+    text-decoration: none;
+    width: 50%;
+    display: block;
+    float: left;
+    height: 100%;
+    text-align: center;
+}
+
+a:hover{
+    background-color: rgb(88, 158, 146);
+}
+
+span{
+    display: block;
+    margin: 40% 0;
+
+    color: rgb(43, 43, 43);
+    font-size: 30px;
+    font-weight: 0;
+}
