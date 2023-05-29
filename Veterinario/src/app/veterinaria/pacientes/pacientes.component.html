@@ -1,0 +1,24 @@
+<section>
+    <h2>Pacientes</h2>
+    <div *ngIf="hayPacientes" class="pacientes">
+        <h3 id="cedula">Cédula</h3>
+        <h3 id="sintomas">Síntomas</h3>
+        <ol>
+            <li *ngFor="let p of pacientes">
+                <hr>
+                <div class="id">{{ p.id }}</div>
+                <div class=sintomas>
+                    <ul>
+                        <li *ngFor="let s of p.sintomas">
+                            <div>{{ s }}</div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ol>
+    </div>
+    <div *ngIf="!hayPacientes" class="vacio">
+        <p>Todavía no hay pacientes en espera.</p>
+    </div>
+</section>
+<a routerLink="/registro">registro</a>
